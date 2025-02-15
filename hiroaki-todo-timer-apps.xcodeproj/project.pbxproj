@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -41,10 +41,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0F43547BB5B655DA9AB50716 /* .gitkeep */ = {isa = PBXFileReference; path = .gitkeep; sourceTree = "<group>"; };
+		0F43547BB5B655DA9AB50716 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
 		0F78280217729C65C99571D4 /* SwiftData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftData.framework; sourceTree = "<group>"; };
 		23BBA5ACFA020DDEFA789E37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		463B66BA25B583AE3F3CAF76 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		53AA88FD2D606FA400D2887A /* Untitled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Untitled.swift; sourceTree = "<group>"; };
 		7805E43DC2B72BA953FB2F5F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ABB0377B0BC6DDCE365F7B70 /* hiroaki-todo-timer-appTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = "hiroaki-todo-timer-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1FF747B22C07473AC520575 /* hiroaki_todo_timer_app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = hiroaki_todo_timer_app.entitlements; sourceTree = "<group>"; };
@@ -66,6 +67,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53AA88FC2D606F9B00D2887A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				53AA88FD2D606FA400D2887A /* Untitled.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		74F42EA507D5526FDDDBC945 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +94,7 @@
 		C522E12EA1E6814AF336C363 /* hiroaki-todo-timer-app */ = {
 			isa = PBXGroup;
 			children = (
+				53AA88FC2D606F9B00D2887A /* Models */,
 				F7D158985DFE77A9090CE4DE /* Assets.xcassets */,
 				463B66BA25B583AE3F3CAF76 /* ContentView.swift */,
 				B1FF747B22C07473AC520575 /* hiroaki_todo_timer_app.entitlements */,
@@ -168,8 +178,6 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
-				TargetAttributes = {
-				};
 			};
 			buildConfigurationList = 292CC04D6DC36EDACC0FD659 /* Build configuration list for PBXProject "hiroaki-todo-timer-apps" */;
 			compatibilityVersion = "Xcode 14.0";
