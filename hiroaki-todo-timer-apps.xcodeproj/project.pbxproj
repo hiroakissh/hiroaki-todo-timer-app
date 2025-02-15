@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4545C8E679A9683582F53CE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7D158985DFE77A9090CE4DE /* Assets.xcassets */; };
+		7E2D7A32BD7B643BDDEEA65B /* SwiftData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F78280217729C65C99571D4 /* SwiftData.framework */; };
+		8B57095878CB7432EDC845BC /* SwiftData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0F78280217729C65C99571D4 /* SwiftData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8CF7385AE1856A9E2ACB1B33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463B66BA25B583AE3F3CAF76 /* ContentView.swift */; };
+		8D10EB15057D368CFE10C8D3 /* hiroaki_todo_timer_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B954CDDCE815B624D7515CFF /* hiroaki_todo_timer_appApp.swift */; };
+		9AB5023B38E8E0BAC0D89107 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7805E43DC2B72BA953FB2F5F /* Preview Assets.xcassets */; };
+		D96D93FABEDA8BF7081C5308 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE39C9D1FE42358FAAB74DB4 /* Item.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		31D56C9E9D5E0563B3AF83C5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 56DE98AB65AC5D98B820727A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 249058064FD4FC78B6316374;
+			remoteInfo = "hiroaki-todo-timer-app";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2B28F3AD80F1EA03D7388D9B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8B57095878CB7432EDC845BC /* SwiftData.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0F43547BB5B655DA9AB50716 /* .gitkeep */ = {isa = PBXFileReference; path = .gitkeep; sourceTree = "<group>"; };
+		0F78280217729C65C99571D4 /* SwiftData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftData.framework; sourceTree = "<group>"; };
+		23BBA5ACFA020DDEFA789E37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		463B66BA25B583AE3F3CAF76 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7805E43DC2B72BA953FB2F5F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ABB0377B0BC6DDCE365F7B70 /* hiroaki-todo-timer-appTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = "hiroaki-todo-timer-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1FF747B22C07473AC520575 /* hiroaki_todo_timer_app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = hiroaki_todo_timer_app.entitlements; sourceTree = "<group>"; };
+		B80E0B593D0709DE81FB777E /* hiroaki-todo-timer-app.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "hiroaki-todo-timer-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B954CDDCE815B624D7515CFF /* hiroaki_todo_timer_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hiroaki_todo_timer_appApp.swift; sourceTree = "<group>"; };
+		F7D158985DFE77A9090CE4DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE39C9D1FE42358FAAB74DB4 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA6E0706A64750DD28134742 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E2D7A32BD7B643BDDEEA65B /* SwiftData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		74F42EA507D5526FDDDBC945 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0F43547BB5B655DA9AB50716 /* .gitkeep */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		7DA78B402E18D77EF92B6901 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F78280217729C65C99571D4 /* SwiftData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C522E12EA1E6814AF336C363 /* hiroaki-todo-timer-app */ = {
+			isa = PBXGroup;
+			children = (
+				F7D158985DFE77A9090CE4DE /* Assets.xcassets */,
+				463B66BA25B583AE3F3CAF76 /* ContentView.swift */,
+				B1FF747B22C07473AC520575 /* hiroaki_todo_timer_app.entitlements */,
+				B954CDDCE815B624D7515CFF /* hiroaki_todo_timer_appApp.swift */,
+				23BBA5ACFA020DDEFA789E37 /* Info.plist */,
+				FE39C9D1FE42358FAAB74DB4 /* Item.swift */,
+				C9E2AFA7134C4D80F352B59F /* Preview Content */,
+			);
+			path = "hiroaki-todo-timer-app";
+			sourceTree = "<group>";
+		};
+		C9E2AFA7134C4D80F352B59F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7805E43DC2B72BA953FB2F5F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D6B4A24471A69FDABA1F466C = {
+			isa = PBXGroup;
+			children = (
+				C522E12EA1E6814AF336C363 /* hiroaki-todo-timer-app */,
+				74F42EA507D5526FDDDBC945 /* Tests */,
+				7DA78B402E18D77EF92B6901 /* Frameworks */,
+				F78EAB26033F6C42083BCEAA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F78EAB26033F6C42083BCEAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B80E0B593D0709DE81FB777E /* hiroaki-todo-timer-app.app */,
+				ABB0377B0BC6DDCE365F7B70 /* hiroaki-todo-timer-appTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1AAA912FAF6F7F5FA9150639 /* hiroaki-todo-timer-appTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22BEB0B5608AE6F3C8E899C2 /* Build configuration list for PBXNativeTarget "hiroaki-todo-timer-appTests" */;
+			buildPhases = (
+				5609214B87D4EE3DE6189A19 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E08AE4B0C8D5BB55FA81B977 /* PBXTargetDependency */,
+			);
+			name = "hiroaki-todo-timer-appTests";
+			productName = "hiroaki-todo-timer-appTests";
+			productReference = ABB0377B0BC6DDCE365F7B70 /* hiroaki-todo-timer-appTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		249058064FD4FC78B6316374 /* hiroaki-todo-timer-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F6D873E587EAC56728F8136 /* Build configuration list for PBXNativeTarget "hiroaki-todo-timer-app" */;
+			buildPhases = (
+				9B1C91EAAB9FDA01C1144177 /* Sources */,
+				4DF16A12DFF7A42665CC2061 /* Resources */,
+				CA6E0706A64750DD28134742 /* Frameworks */,
+				2B28F3AD80F1EA03D7388D9B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "hiroaki-todo-timer-app";
+			productName = "hiroaki-todo-timer-app";
+			productReference = B80E0B593D0709DE81FB777E /* hiroaki-todo-timer-app.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		56DE98AB65AC5D98B820727A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 292CC04D6DC36EDACC0FD659 /* Build configuration list for PBXProject "hiroaki-todo-timer-apps" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = D6B4A24471A69FDABA1F466C;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				249058064FD4FC78B6316374 /* hiroaki-todo-timer-app */,
+				1AAA912FAF6F7F5FA9150639 /* hiroaki-todo-timer-appTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4DF16A12DFF7A42665CC2061 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4545C8E679A9683582F53CE9 /* Assets.xcassets in Resources */,
+				9AB5023B38E8E0BAC0D89107 /* Preview Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5609214B87D4EE3DE6189A19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B1C91EAAB9FDA01C1144177 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CF7385AE1856A9E2ACB1B33 /* ContentView.swift in Sources */,
+				D96D93FABEDA8BF7081C5308 /* Item.swift in Sources */,
+				8D10EB15057D368CFE10C8D3 /* hiroaki_todo_timer_appApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E08AE4B0C8D5BB55FA81B977 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 249058064FD4FC78B6316374 /* hiroaki-todo-timer-app */;
+			targetProxy = 31D56C9E9D5E0563B3AF83C5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0DE39F9AF5F36BED85DCD309 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\".\"",
+				);
+				INFOPLIST_FILE = "hiroaki-todo-timer-app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hiroakiapp.hiroaki-todo-timer-app.hiroaki-todo-timer-app";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1E1F2B8937C17DC12B5D669D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		77033B38C93D65A7C809F693 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B8B6FB0D7CE176CC5C13575E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hiroakiapp.hiroaki-todo-timer-app.hiroaki-todo-timer-appTests";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hiroaki-todo-timer-app.app/hiroaki-todo-timer-app";
+			};
+			name = Debug;
+		};
+		E2212B05803F1705EED96872 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hiroakiapp.hiroaki-todo-timer-app.hiroaki-todo-timer-appTests";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hiroaki-todo-timer-app.app/hiroaki-todo-timer-app";
+			};
+			name = Release;
+		};
+		E352028A967907D62DABE91D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\".\"",
+				);
+				INFOPLIST_FILE = "hiroaki-todo-timer-app/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hiroakiapp.hiroaki-todo-timer-app.hiroaki-todo-timer-app";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22BEB0B5608AE6F3C8E899C2 /* Build configuration list for PBXNativeTarget "hiroaki-todo-timer-appTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8B6FB0D7CE176CC5C13575E /* Debug */,
+				E2212B05803F1705EED96872 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		292CC04D6DC36EDACC0FD659 /* Build configuration list for PBXProject "hiroaki-todo-timer-apps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E1F2B8937C17DC12B5D669D /* Debug */,
+				77033B38C93D65A7C809F693 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5F6D873E587EAC56728F8136 /* Build configuration list for PBXNativeTarget "hiroaki-todo-timer-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E352028A967907D62DABE91D /* Debug */,
+				0DE39F9AF5F36BED85DCD309 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 56DE98AB65AC5D98B820727A /* Project object */;
+}

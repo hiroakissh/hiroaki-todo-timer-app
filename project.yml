@@ -1,0 +1,35 @@
+name: hiroaki-todo-timer-apps
+options:
+  bundleIdPrefix: com.hiroakiapp.hiroaki-todo-timer-app
+  deploymentTarget:
+    iOS: '16.0'
+  usesSwiftData: true
+
+settings:
+  base:
+    SWIFT_VERSION: 5.0
+    ENABLE_TESTABILITY: YES
+    CURRENT_PROJECT_VERSION: 1
+    MARKETING_VERSION: 1.0.0
+
+targets:
+  hiroaki-todo-timer-app:
+    type: application
+    platform: iOS
+    deploymentTarget: '17.0'
+    sources: [hiroaki-todo-timer-app]
+    resources: [hiroaki-todo-timer-app/Resources]
+    dependencies:
+      - framework: SwiftData.framework
+    info:
+      path: hiroaki-todo-timer-app/Info.plist
+      properties:
+        UILaunchStoryboardName: LaunchScreen
+        CFBundleShortVersionString: 1.0
+        CFBundleVersion: 1
+  hiroaki-todo-timer-appTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: [Tests]
+    dependencies:
+      - target: hiroaki-todo-timer-app
