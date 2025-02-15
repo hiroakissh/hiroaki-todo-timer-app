@@ -12,6 +12,8 @@
 ### プロジェクトのワークスペースのデータを格納するXMLファイル
 !*.xcworkspace/contents.xcworkspacedata
 
+UserInterfaceState.xcuserstate
+
 ## User settings
 xcuserdata/
 

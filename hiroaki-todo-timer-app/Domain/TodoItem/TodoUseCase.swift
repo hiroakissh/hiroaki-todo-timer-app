@@ -15,6 +15,10 @@ final class TodoUseCase {
         self.repository = repository
     }
 
+    func fetchAllTodos() -> [TodoModel] {
+        repository.fetchAllTodos()
+    }
+
     func createTodo(title: String, priority: TaskPriority) {
         let todo = TodoModel(title: title, priority: priority)
         repository.addTodo(todo)
