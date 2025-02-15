@@ -1,5 +1,5 @@
 //
-//  TaskLog.swift
+//  TaskLogModel.swift
 //  hiroaki-todo-timer-app
 //
 //  Created by HiroakiSaito on 2025/02/15.
@@ -12,7 +12,7 @@ import Foundation
 class TaskLog {
     @Attribute(.unique) var id: String
     var timestamp: Date
-    var action: String // "作成", "開始", "完了", "再開", "削除"
+    var action: String
     var notes: String?
 
     init(id: String = UUID().uuidString, timestamp: Date, action: String, notes: String? = nil) {

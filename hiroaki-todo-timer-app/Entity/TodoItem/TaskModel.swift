@@ -1,5 +1,5 @@
 //
-//  Task.swift
+//  TaskModel.swift
 //  hiroaki-todo-timer-app
 //
 //  Created by HiroakiSaito on 2025/02/15.
@@ -12,20 +12,20 @@ import Foundation
 class Task {
     @Attribute(.unique) var id: String
     var title: String
-    var description: String?
+    var descriptionMsg: String?
     var startDate: Date?
     var dueDate: Date?
-    var priority: String // "low", "medium", "high"
-    var status: String // "未着手", "進行中", "完了"
+    var priority: TaskPriority
+    var status: TaskStatus
 
     @Relationship(deleteRule: .cascade) var timeLogs: [TimeLog] = []
     @Relationship(deleteRule: .cascade) var attachments: [Attachment] = []
     @Relationship(deleteRule: .cascade) var logs: [TaskLog] = []
 
-    init(id: String = UUID().uuidString, title: String, description: String? = nil, startDate: Date? = nil, dueDate: Date? = nil, priority: String = "medium", status: String = "未着手") {
+    init(id: String = UUID().uuidString, title: String, descriptionMsg: String? = nil, startDate: Date? = nil, dueDate: Date? = nil, priority: TaskPriority = .medium, status: TaskStatus = .notStarted) {
         self.id = id
         self.title = title
-        self.description = description
+        self.descriptionMsg = descriptionMsg
         self.startDate = startDate
         self.dueDate = dueDate
         self.priority = priority
