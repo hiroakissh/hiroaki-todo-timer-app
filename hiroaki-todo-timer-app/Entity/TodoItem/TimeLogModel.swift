@@ -9,7 +9,7 @@ import SwiftData
 import Foundation
 
 @Model
-class TimeLog {
+class TimeLogModel {
     @Attribute(.unique) var id: String
     var startTime: Date
     var endTime: Date?

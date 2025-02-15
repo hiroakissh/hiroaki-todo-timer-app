@@ -9,11 +9,11 @@ import SwiftData
 import Foundation
 
 @Model
-class User {
+class UserModel {
     @Attribute(.unique) var id: String
     var name: String
     var email: String
-    @Relationship(deleteRule: .cascade) var tasks: [Task] = []
+    @Relationship(deleteRule: .cascade) var tasks: [TodoModel] = []
 
     init(id: String = UUID().uuidString, name: String, email: String) {
         self.id = id

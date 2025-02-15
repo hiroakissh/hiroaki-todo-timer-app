@@ -16,7 +16,7 @@
 		5350AD8E2D605C7000800586 /* hiroaki_todo_timer_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5350AD8D2D605C7000800586 /* hiroaki_todo_timer_appUITests.swift */; };
 		5350AD902D605C7000800586 /* hiroaki_todo_timer_appUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5350AD8F2D605C7000800586 /* hiroaki_todo_timer_appUITestsLaunchTests.swift */; };
 		53AA88FF2D606FBA00D2887A /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AA88FE2D606FB600D2887A /* UserModel.swift */; };
-		53AA89012D606FF200D2887A /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AA89002D606FF200D2887A /* TaskModel.swift */; };
+		53AA89012D606FF200D2887A /* TodoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AA89002D606FF200D2887A /* TodoModel.swift */; };
 		53AA89032D60701200D2887A /* TimeLogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AA89022D60701200D2887A /* TimeLogModel.swift */; };
 		53AA89052D60702F00D2887A /* AttachmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AA89042D60702F00D2887A /* AttachmentModel.swift */; };
 		53AA89072D60704500D2887A /* TaskLogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AA89062D60704500D2887A /* TaskLogModel.swift */; };
@@ -60,7 +60,7 @@
 		5350AD8D2D605C7000800586 /* hiroaki_todo_timer_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hiroaki_todo_timer_appUITests.swift; sourceTree = "<group>"; };
 		5350AD8F2D605C7000800586 /* hiroaki_todo_timer_appUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hiroaki_todo_timer_appUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		53AA88FE2D606FB600D2887A /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
-		53AA89002D606FF200D2887A /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		53AA89002D606FF200D2887A /* TodoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoModel.swift; sourceTree = "<group>"; };
 		53AA89022D60701200D2887A /* TimeLogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLogModel.swift; sourceTree = "<group>"; };
 		53AA89042D60702F00D2887A /* AttachmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentModel.swift; sourceTree = "<group>"; };
 		53AA89062D60704500D2887A /* TaskLogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskLogModel.swift; sourceTree = "<group>"; };
@@ -195,14 +195,12 @@
 		53AA890E2D60721A00D2887A /* TodoItem */ = {
 			isa = PBXGroup;
 			children = (
-				53AA891C2D60752400D2887A /* TaskStatus.swift */,
-				53AA891A2D6074F700D2887A /* TaskAction.swift */,
-				53AA89182D6074EA00D2887A /* TaskPriority.swift */,
+				53AA891E2D607AA600D2887A /* Status */,
 				53AA88FE2D606FB600D2887A /* UserModel.swift */,
 				53AA89062D60704500D2887A /* TaskLogModel.swift */,
 				53AA89042D60702F00D2887A /* AttachmentModel.swift */,
 				53AA89022D60701200D2887A /* TimeLogModel.swift */,
-				53AA89002D606FF200D2887A /* TaskModel.swift */,
+				53AA89002D606FF200D2887A /* TodoModel.swift */,
 			);
 			path = TodoItem;
 			sourceTree = "<group>";
@@ -230,6 +228,16 @@
 				53AA89122D60726500D2887A /* TodoRepositoryImpl.swift */,
 			);
 			path = TodoItem;
+			sourceTree = "<group>";
+		};
+		53AA891E2D607AA600D2887A /* Status */ = {
+			isa = PBXGroup;
+			children = (
+				53AA891C2D60752400D2887A /* TaskStatus.swift */,
+				53AA891A2D6074F700D2887A /* TaskAction.swift */,
+				53AA89182D6074EA00D2887A /* TaskPriority.swift */,
+			);
+			path = Status;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,7 +304,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1510;
-				LastUpgradeCheck = 1510;
+				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					5350AD6B2D605C6F00800586 = {
 						CreatedOnToolsVersion = 15.1;
@@ -366,7 +374,7 @@
 				53AA89052D60702F00D2887A /* AttachmentModel.swift in Sources */,
 				5350AD742D605C6F00800586 /* Item.swift in Sources */,
 				53AA891D2D60752900D2887A /* TaskStatus.swift in Sources */,
-				53AA89012D606FF200D2887A /* TaskModel.swift in Sources */,
+				53AA89012D606FF200D2887A /* TodoModel.swift in Sources */,
 				53AA89192D6074EB00D2887A /* TaskPriority.swift in Sources */,
 				53AA88FF2D606FBA00D2887A /* UserModel.swift in Sources */,
 				53AA89172D60727600D2887A /* TodoRepository.swift in Sources */,
@@ -447,6 +455,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -508,6 +517,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -535,6 +545,7 @@
 				CODE_SIGN_ENTITLEMENTS = "hiroaki-todo-timer-app/hiroaki_todo_timer_app.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"hiroaki-todo-timer-app/Preview Content\"";
 				DEVELOPMENT_TEAM = X5LBWH4CYQ;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -573,6 +584,7 @@
 				CODE_SIGN_ENTITLEMENTS = "hiroaki-todo-timer-app/hiroaki_todo_timer_app.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"hiroaki-todo-timer-app/Preview Content\"";
 				DEVELOPMENT_TEAM = X5LBWH4CYQ;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -606,10 +618,10 @@
 		5350AD972D605C7000800586 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = X5LBWH4CYQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
@@ -629,10 +641,10 @@
 		5350AD982D605C7000800586 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = X5LBWH4CYQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
@@ -652,9 +664,9 @@
 		5350AD9A2D605C7000800586 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = X5LBWH4CYQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
@@ -674,9 +686,9 @@
 		5350AD9B2D605C7000800586 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = X5LBWH4CYQ;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.2;

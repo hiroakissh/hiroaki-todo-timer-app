@@ -7,10 +7,11 @@
 
 import Foundation
 
+@MainActor
 protocol TodoRepository {
-    func fetchAllTodos() -> [Task]
-    func addTodo(_ todo: Task)
-    func updateTodo(_ todo: Task)
-    func deleteTodo(_ todo: Task)
+    func fetchAllTodos() -> [TodoModel]
+    func addTodo(_ todo: TodoModel)
+    func updateTodo(_ todo: TodoModel)
+    func deleteTodo(_ todo: TodoModel)
 }
 

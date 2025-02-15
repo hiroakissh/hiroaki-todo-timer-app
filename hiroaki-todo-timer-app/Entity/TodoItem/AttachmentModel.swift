@@ -9,7 +9,7 @@ import SwiftData
 import Foundation
 
 @Model
-class Attachment {
+class AttachmentModel {
     @Attribute(.unique) var id: String
     var fileURL: String
 

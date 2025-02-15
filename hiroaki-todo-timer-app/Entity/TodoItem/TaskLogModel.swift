@@ -9,7 +9,7 @@ import SwiftData
 import Foundation
 
 @Model
-class TaskLog {
+class TaskLogModel {
     @Attribute(.unique) var id: String
     var timestamp: Date
     var action: String
