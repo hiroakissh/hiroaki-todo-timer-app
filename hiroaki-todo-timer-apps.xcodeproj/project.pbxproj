@@ -3,17 +3,30 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0691E99BE5D78B48D11AC893 /* TimeLogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 132D6869C6663B944F0F4D97 /* TimeLogModel.swift */; };
+		1E0F8BC77A0A06D150056D2A /* TodoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF8DF5F101E8B6CF4A498BE /* TodoRepository.swift */; };
+		2FED74EC0916D310BA151F84 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF57964C7330DEAFCC9EF20C /* DataManager.swift */; };
+		444099B46B50B094926F00DA /* TodoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 623E7AC320B08820F6923B84 /* TodoListViewModel.swift */; };
 		4545C8E679A9683582F53CE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7D158985DFE77A9090CE4DE /* Assets.xcassets */; };
+		5165187B21DAE4430A7F4A37 /* TodoRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6804CD8884D03719A542CE19 /* TodoRepositoryImpl.swift */; };
+		7BC8AA9626E97853023C925D /* AttachmentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E61CA7977424EAB326D900C /* AttachmentModel.swift */; };
 		7E2D7A32BD7B643BDDEEA65B /* SwiftData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F78280217729C65C99571D4 /* SwiftData.framework */; };
+		7F71855C0369C15B23E710A2 /* TodoUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7654DA50939D9925ADDBC15 /* TodoUseCase.swift */; };
 		8B57095878CB7432EDC845BC /* SwiftData.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0F78280217729C65C99571D4 /* SwiftData.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8CF7385AE1856A9E2ACB1B33 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463B66BA25B583AE3F3CAF76 /* ContentView.swift */; };
 		8D10EB15057D368CFE10C8D3 /* hiroaki_todo_timer_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B954CDDCE815B624D7515CFF /* hiroaki_todo_timer_appApp.swift */; };
 		9AB5023B38E8E0BAC0D89107 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7805E43DC2B72BA953FB2F5F /* Preview Assets.xcassets */; };
+		BF9962E2876161F549254F56 /* TaskStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2AFDE35E5C53A6DCF619BF /* TaskStatus.swift */; };
+		C040FC5555E7BC4DA665F956 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6CE36A3E24F2AE48EC10A9 /* UserModel.swift */; };
+		C93C7CC986B1F5012AE84AD7 /* TaskPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7580F090AC0D0FCCB1677FA4 /* TaskPriority.swift */; };
+		D8B08C99B1B150D3A8E08E81 /* TodoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FDB0007D2903A92350EFF78 /* TodoModel.swift */; };
 		D96D93FABEDA8BF7081C5308 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE39C9D1FE42358FAAB74DB4 /* Item.swift */; };
+		DDB09F7373C507BE215B1B1D /* TaskLogModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4D43784278EE6AC1E40375 /* TaskLogModel.swift */; };
+		F0EBD217BC79EDC2152E2D2F /* TaskAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A75267966265FE101481270 /* TaskAction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,18 +54,30 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0F43547BB5B655DA9AB50716 /* .gitkeep */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		0F43547BB5B655DA9AB50716 /* .gitkeep */ = {isa = PBXFileReference; path = .gitkeep; sourceTree = "<group>"; };
 		0F78280217729C65C99571D4 /* SwiftData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftData.framework; sourceTree = "<group>"; };
+		132D6869C6663B944F0F4D97 /* TimeLogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLogModel.swift; sourceTree = "<group>"; };
+		1B4D43784278EE6AC1E40375 /* TaskLogModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskLogModel.swift; sourceTree = "<group>"; };
+		1B6CE36A3E24F2AE48EC10A9 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		1E61CA7977424EAB326D900C /* AttachmentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentModel.swift; sourceTree = "<group>"; };
 		23BBA5ACFA020DDEFA789E37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		463B66BA25B583AE3F3CAF76 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		53AA88FD2D606FA400D2887A /* Untitled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Untitled.swift; sourceTree = "<group>"; };
+		4FDB0007D2903A92350EFF78 /* TodoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoModel.swift; sourceTree = "<group>"; };
+		623E7AC320B08820F6923B84 /* TodoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewModel.swift; sourceTree = "<group>"; };
+		6804CD8884D03719A542CE19 /* TodoRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoRepositoryImpl.swift; sourceTree = "<group>"; };
+		7580F090AC0D0FCCB1677FA4 /* TaskPriority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskPriority.swift; sourceTree = "<group>"; };
 		7805E43DC2B72BA953FB2F5F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7AF8DF5F101E8B6CF4A498BE /* TodoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoRepository.swift; sourceTree = "<group>"; };
+		9A75267966265FE101481270 /* TaskAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskAction.swift; sourceTree = "<group>"; };
 		ABB0377B0BC6DDCE365F7B70 /* hiroaki-todo-timer-appTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = "hiroaki-todo-timer-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE2AFDE35E5C53A6DCF619BF /* TaskStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskStatus.swift; sourceTree = "<group>"; };
 		B1FF747B22C07473AC520575 /* hiroaki_todo_timer_app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = hiroaki_todo_timer_app.entitlements; sourceTree = "<group>"; };
 		B80E0B593D0709DE81FB777E /* hiroaki-todo-timer-app.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = "hiroaki-todo-timer-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B954CDDCE815B624D7515CFF /* hiroaki_todo_timer_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hiroaki_todo_timer_appApp.swift; sourceTree = "<group>"; };
+		D7654DA50939D9925ADDBC15 /* TodoUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoUseCase.swift; sourceTree = "<group>"; };
 		F7D158985DFE77A9090CE4DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE39C9D1FE42358FAAB74DB4 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		FF57964C7330DEAFCC9EF20C /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,12 +92,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		53AA88FC2D606F9B00D2887A /* Models */ = {
+		012E6224B497FBC2B2834CDC /* TodoList */ = {
 			isa = PBXGroup;
 			children = (
-				53AA88FD2D606FA400D2887A /* Untitled.swift */,
+				4FBAF38214D86202868120D2 /* ViewModel */,
 			);
-			path = Models;
+			path = TodoList;
+			sourceTree = "<group>";
+		};
+		01F326CA3C588DA7CD526162 /* Status */ = {
+			isa = PBXGroup;
+			children = (
+				9A75267966265FE101481270 /* TaskAction.swift */,
+				7580F090AC0D0FCCB1677FA4 /* TaskPriority.swift */,
+				AE2AFDE35E5C53A6DCF619BF /* TaskStatus.swift */,
+			);
+			path = Status;
+			sourceTree = "<group>";
+		};
+		28E3EE79B3B3D53B3942F859 /* TodoItem */ = {
+			isa = PBXGroup;
+			children = (
+				1E61CA7977424EAB326D900C /* AttachmentModel.swift */,
+				1B4D43784278EE6AC1E40375 /* TaskLogModel.swift */,
+				132D6869C6663B944F0F4D97 /* TimeLogModel.swift */,
+				4FDB0007D2903A92350EFF78 /* TodoModel.swift */,
+				1B6CE36A3E24F2AE48EC10A9 /* UserModel.swift */,
+				01F326CA3C588DA7CD526162 /* Status */,
+			);
+			path = TodoItem;
+			sourceTree = "<group>";
+		};
+		36E6478D2705D26A13C47AFE /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				28E3EE79B3B3D53B3942F859 /* TodoItem */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		3DF0BEBADA227C70052005E5 /* TodoItem */ = {
+			isa = PBXGroup;
+			children = (
+				6804CD8884D03719A542CE19 /* TodoRepositoryImpl.swift */,
+			);
+			path = TodoItem;
+			sourceTree = "<group>";
+		};
+		4FBAF38214D86202868120D2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				623E7AC320B08820F6923B84 /* TodoListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5ED1B339E29F19C098A9AB6C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				3DF0BEBADA227C70052005E5 /* TodoItem */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		65095518D7C3D69D7D40F346 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				012E6224B497FBC2B2834CDC /* TodoList */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 		74F42EA507D5526FDDDBC945 /* Tests */ = {
@@ -83,6 +171,15 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
+		76BA483479240659E12FDED5 /* TodoItem */ = {
+			isa = PBXGroup;
+			children = (
+				7AF8DF5F101E8B6CF4A498BE /* TodoRepository.swift */,
+				D7654DA50939D9925ADDBC15 /* TodoUseCase.swift */,
+			);
+			path = TodoItem;
+			sourceTree = "<group>";
+		};
 		7DA78B402E18D77EF92B6901 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,16 +188,28 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		85BCE7069B0E3C0D7EC630F5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D91F9DF0048EDA2EBE32F39C /* TodoItem */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
 		C522E12EA1E6814AF336C363 /* hiroaki-todo-timer-app */ = {
 			isa = PBXGroup;
 			children = (
-				53AA88FC2D606F9B00D2887A /* Models */,
 				F7D158985DFE77A9090CE4DE /* Assets.xcassets */,
 				463B66BA25B583AE3F3CAF76 /* ContentView.swift */,
 				B1FF747B22C07473AC520575 /* hiroaki_todo_timer_app.entitlements */,
 				B954CDDCE815B624D7515CFF /* hiroaki_todo_timer_appApp.swift */,
 				23BBA5ACFA020DDEFA789E37 /* Info.plist */,
 				FE39C9D1FE42358FAAB74DB4 /* Item.swift */,
+				85BCE7069B0E3C0D7EC630F5 /* Core */,
+				5ED1B339E29F19C098A9AB6C /* Data */,
+				EAFD7D4B8728A24AE85EDC54 /* Domain */,
+				36E6478D2705D26A13C47AFE /* Entity */,
+				65095518D7C3D69D7D40F346 /* Presentation */,
 				C9E2AFA7134C4D80F352B59F /* Preview Content */,
 			);
 			path = "hiroaki-todo-timer-app";
@@ -122,6 +231,22 @@
 				7DA78B402E18D77EF92B6901 /* Frameworks */,
 				F78EAB26033F6C42083BCEAA /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		D91F9DF0048EDA2EBE32F39C /* TodoItem */ = {
+			isa = PBXGroup;
+			children = (
+				FF57964C7330DEAFCC9EF20C /* DataManager.swift */,
+			);
+			path = TodoItem;
+			sourceTree = "<group>";
+		};
+		EAFD7D4B8728A24AE85EDC54 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				76BA483479240659E12FDED5 /* TodoItem */,
+			);
+			path = Domain;
 			sourceTree = "<group>";
 		};
 		F78EAB26033F6C42083BCEAA /* Products */ = {
@@ -178,6 +303,8 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
 			};
 			buildConfigurationList = 292CC04D6DC36EDACC0FD659 /* Build configuration list for PBXProject "hiroaki-todo-timer-apps" */;
 			compatibilityVersion = "Xcode 14.0";
@@ -221,8 +348,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BC8AA9626E97853023C925D /* AttachmentModel.swift in Sources */,
 				8CF7385AE1856A9E2ACB1B33 /* ContentView.swift in Sources */,
+				2FED74EC0916D310BA151F84 /* DataManager.swift in Sources */,
 				D96D93FABEDA8BF7081C5308 /* Item.swift in Sources */,
+				F0EBD217BC79EDC2152E2D2F /* TaskAction.swift in Sources */,
+				DDB09F7373C507BE215B1B1D /* TaskLogModel.swift in Sources */,
+				C93C7CC986B1F5012AE84AD7 /* TaskPriority.swift in Sources */,
+				BF9962E2876161F549254F56 /* TaskStatus.swift in Sources */,
+				0691E99BE5D78B48D11AC893 /* TimeLogModel.swift in Sources */,
+				444099B46B50B094926F00DA /* TodoListViewModel.swift in Sources */,
+				D8B08C99B1B150D3A8E08E81 /* TodoModel.swift in Sources */,
+				1E0F8BC77A0A06D150056D2A /* TodoRepository.swift in Sources */,
+				5165187B21DAE4430A7F4A37 /* TodoRepositoryImpl.swift in Sources */,
+				7F71855C0369C15B23E710A2 /* TodoUseCase.swift in Sources */,
+				C040FC5555E7BC4DA665F956 /* UserModel.swift in Sources */,
 				8D10EB15057D368CFE10C8D3 /* hiroaki_todo_timer_appApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
