@@ -7,15 +7,12 @@
 
 import Foundation
 
-class TodoUseCase {
-    private let repository: TodoRepository
+@MainActor
+final class TodoUseCase {
+    private let repository: TodoRepositoryImpl 
 
-    init(repository: TodoRepository) {
+    init(repository: TodoRepositoryImpl) {
         self.repository = repository
-    }
-
-    func getTodos() -> [TodoModel] {
-        return repository.fetchAllTodos()
     }
 
     func createTodo(title: String, priority: TaskPriority) {
